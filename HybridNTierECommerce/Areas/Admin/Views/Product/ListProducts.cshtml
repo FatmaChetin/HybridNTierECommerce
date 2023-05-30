@@ -1,0 +1,49 @@
+﻿@model AdminListProductPageVM
+@{
+    ViewBag.Title = "ListProducts";
+}
+<header class="panel heading">
+    @Html.ActionLink("Ürün Ekle", "AddProduct",null, new {  @class="btn btn-primary"})
+</header>
+
+<div class="panel-body">
+    <div class="adv-table">
+        <table cellpadding="0" cellspacing="0" border="0" class="Display- table table-bordered" id="hidden-table-info">
+            <thead>
+                <tr>
+                    <th> Ürün ID</th>
+                    <th> Ürün İsmi</th>
+                    <th class="hidden-phone">Ürün Fiyatı</th>
+                    <th class="hidden-phone">Ürün Kategorisi</th>
+                    <th class="Hidden-phone">Ürün Durumu</th>
+                    <th class="hidden-phone">Sil</th>
+                    <th class="hidden-phone">Güncelle</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (AdminProductPureVM item in Model.Products)
+                {
+                    <tr class="grandeX">
+                        <td>@item.ID</td>
+                        <td>@item.ProductName</td>
+                        <td class="hidden-phone">@item.UnitPrice</td>
+                        @if (item.CategoryName==null)
+                        {
+                            <td>Kategorisi belirtilmemiştir.</td>
+                        }
+                        else
+                        {
+                            <td class="hidden-phone">@item.CategoryName</td>
+                        }
+                        <td>@item.DataStatus</td>
+                        <td class="align-content-center hidden-phone">@Html.ActionLink("Sil", "DeleteProduct", new { id = item.ID }, new { @class = "btn btn-danger" }) </td>
+                        <td class="center hidden-phone">@Html.ActionLink("Güncelle", "UpdateProduct", new { id = item.ID }, new { @class = "btn btn-warning" })</td>
+                    </tr>
+                    
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

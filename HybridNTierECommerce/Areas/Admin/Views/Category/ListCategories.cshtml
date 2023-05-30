@@ -1,0 +1,47 @@
+﻿@model AdminListCategoryPageVM
+@{
+    ViewBag.Title = "ListCategories";
+}
+<h3> Kategorileri listeleme sayfasına hoş geldiniz </h3>
+
+<header class=" panel-headig"> @Html.ActionLink("Kategori Ekle","AddCategory",null, new {@class="btn btn primary"})</header>
+<div class="panel-body">
+    <div class="adv-table">
+        <table class="table table-hover" id="hidden-table-info">
+            <thead>
+                <tr>
+                    <th> Kategori ID </th>
+                    <th>Kategori İsmi</th>
+                    <th class="hidden-phone">Kategori Açıklaması</th>
+                    <th class="hidden-phone"> Durumu </th>
+                    <th class ="hidden-phone"> Oluşturma Tarihi</th>
+                    <th class ="hidden-phone"> Güncelleme Tarihi</th>
+                    <th class="hidden-phone"> Silme Tarihi</th>
+                    <th class="hidden-phone">Sil</th>
+                    <th class ="hidden-phone">Güncelle</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (AdminCategoryPureVM item in Model.Categories)
+                {
+                    <tr class="grandeX">
+                        <td>@item.ID</td>
+                        <td>@item.CategoryName</td>
+                        <td class="hidden-phone">@item.Description</td>
+                        <td class ="hidden-phone">@item.DataStatus</td>
+                        <td class="hidden-phone">@item.CreatedDate</td>
+                        <td class="hidden-phone">@item.UpdatedDate</td>
+                        <tdclass ="hidden-phone">@item.DeletedDate</tdclass>
+                        <td class="center-hidden-phone">@Html.ActionLink("Sil","DeleteCategory", new {id=item.ID}, new {@class="btn btn-warning"})</td>
+                        <td class="center-hidden-action">@Html.ActionLink("Güncelle","UpdateCategory", new {id=item.ID},new {@class="btn btn-waning"})</td>
+
+                    </tr>
+                    
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
