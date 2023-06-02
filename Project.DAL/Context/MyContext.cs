@@ -16,10 +16,10 @@ namespace Project.DAL.Context
     { 
         //session oluşturmak istediğim için context ctorun içerisine yazmalıyım.
         // program.cs içerisine session oluşturdum. configure kısmında app.USeSession tanıttım sonraki aşama ise burası 
-        private readonly IHttpContextAccessor _httpContextAccessor;
-        public MyContext(DbContextOptions<MyContext>options, IHttpContextAccessor httpContextAccessor ):base (options)
+       
+        public MyContext(DbContextOptions<MyContext>options):base (options)
         {
-            _httpContextAccessor = httpContextAccessor;
+         
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -38,7 +38,6 @@ namespace Project.DAL.Context
         public DbSet<Order>  Orders{ get; set; }
         public DbSet<Category> Categories { get; set; }
 
-        // Session özelliği
-        public ISession Session => _httpContextAccessor.HttpContext.Session; 
+       
     }
 }

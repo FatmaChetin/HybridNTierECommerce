@@ -8,7 +8,7 @@ namespace Project.ENTITIES.Models
 {
     public class Order:BaseEntity
     {
-        public string ShippedAddress { get; set; }
+        public string ShippingAddress { get; set; }
         public int? AppUserID { get; set; }
 
         //relational properties

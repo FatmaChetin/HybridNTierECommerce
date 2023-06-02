@@ -10,7 +10,7 @@
 
         public decimal Price { get; set; }
 
-        public string ImagePath { get; set; }
+      
 
         public decimal SubTotal
         {

@@ -5,17 +5,19 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridNTierECommerce", "HybridNTierECommerce\HybridNTierECommerce.csproj", "{9E7A00AF-0C0B-4EAD-9E29-D314D7C48F95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.ENTITIES", "Project.ENTITIES\Project.ENTITIES.csproj", "{511A0560-EC46-499C-9155-3F39CBA5ECF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.ENTITIES", "Project.ENTITIES\Project.ENTITIES.csproj", "{511A0560-EC46-499C-9155-3F39CBA5ECF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.MAP", "Project.MAP\Project.MAP.csproj", "{A325FC43-1226-493A-B804-D84BDB075B29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.MAP", "Project.MAP\Project.MAP.csproj", "{A325FC43-1226-493A-B804-D84BDB075B29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.DAL", "Project.DAL\Project.DAL.csproj", "{24308E4C-B44F-4FEC-8E40-6E22FF5F665B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.DAL", "Project.DAL\Project.DAL.csproj", "{24308E4C-B44F-4FEC-8E40-6E22FF5F665B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.BLL", "Project.BLL\Project.BLL.csproj", "{C874B377-AC84-4459-B139-80FE1923B4B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.BLL", "Project.BLL\Project.BLL.csproj", "{C874B377-AC84-4459-B139-80FE1923B4B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.COMMON", "Project.COMMON\Project.COMMON.csproj", "{D49FEBDF-88F8-42C6-BFE0-505539C6B8C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.COMMON", "Project.COMMON\Project.COMMON.csproj", "{D49FEBDF-88F8-42C6-BFE0-505539C6B8C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.VM", "Project.VM\Project.VM.csproj", "{1210779B-D1F8-42E0-9D38-9E89D05774BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.VM", "Project.VM\Project.VM.csproj", "{1210779B-D1F8-42E0-9D38-9E89D05774BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.CoreApi", "Project.CoreApi\Project.CoreApi.csproj", "{7D9A630A-C91F-41BC-9005-7388A034F3D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{1210779B-D1F8-42E0-9D38-9E89D05774BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1210779B-D1F8-42E0-9D38-9E89D05774BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1210779B-D1F8-42E0-9D38-9E89D05774BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D9A630A-C91F-41BC-9005-7388A034F3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D9A630A-C91F-41BC-9005-7388A034F3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D9A630A-C91F-41BC-9005-7388A034F3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D9A630A-C91F-41BC-9005-7388A034F3D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

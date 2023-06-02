@@ -30,6 +30,10 @@ namespace HybridNTierECommerce
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
+                /*  endpoints.MapControllerRoute(name: "default", pattern: "{controller}/{action}/{id?}",
+                   defaults: new { controller = "Home", action = "Index" 
+                   });
+                */
                 endpoints.MapAreaControllerRoute(name:"Area",
                     areaName:"Admin",
                     pattern:"{area:exists}/{controller=Home}/{action=Index}/{id?}"
